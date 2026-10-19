@@ -1,17 +1,17 @@
 class Cli < Formula
   desc "Zero-Trust Entity Orchestration & CDC Engine"
   homepage "https://onproper.com"
-  version "1.0.15"
+  version "1.0.16"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/onproper/proper-release/releases/download/v1.0.15/proper-darwin-arm64"
-    sha256 "57cede6402bccd1c8ca3c44224e7f7c18085f2eebebdd2a75d2e6548bf1e1aa1"
+    url "https://github.com/onproper/proper-release/releases/download/v1.0.16/proper-darwin-arm64"
+    sha256 "550258e39bf02e54e81552bccefe19d6850a1d48ca55b4d7d554df7fd8711258"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/onproper/proper-release/releases/download/v1.0.15/proper-darwin-amd64"
-    sha256 "e630deea1b279ea95212a3e804137dbdc5d839728596a824f229cbf64e5f3cbd"
+    url "https://github.com/onproper/proper-release/releases/download/v1.0.16/proper-darwin-amd64"
+    sha256 "34def9c94dc280328babc1fa40730cdadd8c04cac8095b320bbb9b1fee4e7b25"
   elsif OS.linux?
-    url "https://github.com/onproper/proper-release/releases/download/v1.0.15/proper-linux-amd64"
-    sha256 "7c9036774a20359b623480b0d6715ca7eabe7ff4eb12d298c1663b4b60cfa04c"
+    url "https://github.com/onproper/proper-release/releases/download/v1.0.16/proper-linux-amd64"
+    sha256 "1e2e4855a8193e4e38f653ce8aeaec6072704cee8af38e519b5ad929f8209e2c"
   end
 
   def install
